@@ -1,0 +1,19 @@
+# Folders
+build
+DataFiles
+gradle
+out
+util
+.idea
+.gradle
+util
+test/
+Examples/
+
+#Files
+*.yaml
+/build.gradle
+/gradlew
+/README.md
+/settings.gradle
+
