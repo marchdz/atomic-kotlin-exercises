@@ -2,7 +2,20 @@
 package summaryIIExercise3
 import atomictest.*
 
-class FixedSizeHolder
+class FixedSizeHolder(private val maxObjects: Int) {
+    private val listOfObjects = mutableListOf<Any>()
+
+    val size: Int
+        get() = listOfObjects.size
+
+    val full: Boolean
+        get() = listOfObjects.size == maxObjects
+
+    fun add(newObject: Any) {
+        if (full) throw IllegalStateException("The container is full")
+        listOfObjects.add(newObject)
+    }
+}
 
 fun main() {
 /*
