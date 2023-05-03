@@ -7,8 +7,8 @@ class Temperature {
   private var scale = "f"
 
   var fahrenheit: Double
-    set(now) {
-      current = now
+    set(newTemperature) {
+      current = newTemperature
       scale = "f"
     }
     get(): Double {
@@ -16,8 +16,8 @@ class Temperature {
     }
 
   var celsius: Double
-    set(now) {
-      current = now
+    set(newTemperature) {
+      current = newTemperature
       scale = "c"
     }
     get(): Double {
@@ -31,5 +31,5 @@ fun main() {
   temp.fahrenheit eq 98.6
   temp.celsius eq 37.0
   temp.celsius = 100.0
-  temp.celsius eq 212.0
+  temp.celsius eq 100.0
 }
