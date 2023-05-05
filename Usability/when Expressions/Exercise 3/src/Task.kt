@@ -3,7 +3,18 @@ package whenExpressionsExercise3
 import atomictest.eq
 
 fun balanced(input: String): Boolean {
-  TODO()}
+  var countParenthesis = 0
+  for (char in input) {
+    when (char) {
+        '(' -> countParenthesis +=1
+        ')' -> countParenthesis -= 1
+        ' ' -> {}
+        else -> throw IllegalArgumentException()
+    }
+    if (countParenthesis < 0) return false
+  }
+  return countParenthesis == 0
+}
 
 fun main() {
   balanced("(()) ()") eq true

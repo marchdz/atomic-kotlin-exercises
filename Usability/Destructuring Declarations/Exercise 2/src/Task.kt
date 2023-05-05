@@ -2,10 +2,13 @@
 package destructuringDeclarationsExercise2
 import atomictest.eq
 
-data class Computation(
+class Computation(
   val data: Int,
   val info: String,
 )
+
+operator fun Computation.component1() = data
+operator fun Computation.component2() = info
 
 fun evaluate(input: Int) =
   if (input > 5)

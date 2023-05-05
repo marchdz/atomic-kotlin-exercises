@@ -9,5 +9,5 @@ fun Book.categorize(category: String) =
 
 fun main() {
   Book("Dracula").categorize("Vampire") eq
-    """title: "Dracula", category: Vampire"""
+          """title: "Dracula", category: Vampire"""
 }

@@ -19,20 +19,20 @@ fun List<Int>.myJoinToString(
 }
 
 fun List<Int>.myJoinToString(separator: String, prefix: String): String {
-  return TODO()
+  return "MY: " + joinToString(separator, prefix)
 }
 
 fun List<Int>.myJoinToString(separator: String): String {
-  return TODO()
+  return "MY: " + joinToString(separator)
 }
 
 fun List<Int>.myJoinToString(): String {
-  return TODO()
+  return "MY: " + joinToString()
 }
 
 /*
 fun List<Int>.myJoinToString(prefix: String, postfix: String): String {
-  TODO()
+  return "MY: " + joinToString(prefix, postfix)
 }
 */
 
