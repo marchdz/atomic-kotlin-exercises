@@ -1,6 +1,7 @@
 // NullableTypes/Task1.kt
 package nullableTypesExercise1
 import atomictest.eq
+import typechecking.name
 
 class Hamster(val name: String) {
   override fun toString(): String {
@@ -21,7 +22,7 @@ class Cage(private val maxCapacity: Int) {
     }
 
   fun get(name: String): Hamster? =
-    TODO()
+    hamsters[name]
 }
 
 fun main() {
